@@ -1,0 +1,5 @@
+apiVersion: v2
+type: application
+name: vatblock-frontend
+description: Frontend for the vatblock project
+version: 0.1.0

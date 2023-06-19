@@ -1,0 +1,28 @@
+replicaCount: 1
+image:
+   repositoryPath: "/main/development/frontend"
+   tag: latest
+
+global:
+  image:
+    repository: registry.gl.deliver.foundation
+    pullSecret: registry
+  pilotmanagement:
+  contract:
+    notary:
+      address: "0x1dBcD7A0bC2259ef2b94Bb473cc916B1F561F351"
+    vault:
+      address: "0x952B254430156E0C794E17B853e0Ac7240d383A8"
+    customer:
+      journey:
+        address: "0x6d84dD093362dc580a680D7c838E59DDaB0C056c"
+  vault:
+    endpoint: "http://vault.service:8080"
+    accessTokenSecretName: vault-accesstoken
+  ethereum:
+    node: ethereum
+  http:
+    passwordSecretName: http-password
+
+
+  
